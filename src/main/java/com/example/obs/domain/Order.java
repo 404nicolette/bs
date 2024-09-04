@@ -6,9 +6,10 @@ import java.sql.Timestamp;
 import java.util.List;
 
 @Entity
+@Table(name = "order_table")
 public class Order {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private long orderId;
     private Timestamp dateTime;
