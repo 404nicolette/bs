@@ -13,8 +13,7 @@ public class Order {
 
     private long orderId;
     private Timestamp dateTime;
-
-    private String userName;
+    private String customerName;
     @ManyToMany
     private List<Book> books;
 
@@ -34,12 +33,12 @@ public class Order {
         this.dateTime = dateTime;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
     public List<Book> getBooks() {
